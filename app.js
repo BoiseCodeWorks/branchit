@@ -7,12 +7,3 @@ function getUserProfile(req, res, next) {
       next(error);
     }
   }
-
-  
-
-
-
-
-function yepItsGood(){
-
-}
