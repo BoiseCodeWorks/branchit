@@ -1,14 +1,14 @@
-// function pleasePleaseWork(){
-//   //dskfsdakjflkdsjalkf jdljsfljdasl fjsa
-// }
+function yepItsGood() {
+  console.log("I do cool things and such");
+}
 
-// function thisOneMightWOrk(){
-//   //dsafsadndsamfdslkanmkfldsj alfd
-// }
-// privatekey asdf8jdsioafu89je89jfasdkfds89j
-/**
- * 
- */
-function yepItsGood(){
-
+yepItsGood();
+async function getUserProfile(req, res, next) {
+  try {
+    // FIXME Where is the profilesService???
+    // let profile = await profilesService.getProfile(req.userInfo);
+    // res.send(profile);
+  } catch (error) {
+    next(error);
+  }
 }
