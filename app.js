@@ -3,12 +3,12 @@ function yepItsGood() {
 }
 
 yepItsGood();
-function getUserProfile(req, res, next) {
-
-    try {
-      let profile = await profilesService.getProfile(req.userInfo);
-      res.send(profile);
-    } catch (error) {
-      next(error);
-    }
+async function getUserProfile(req, res, next) {
+  try {
+    // FIXME Where is the profilesService???
+    // let profile = await profilesService.getProfile(req.userInfo);
+    // res.send(profile);
+  } catch (error) {
+    next(error);
   }
+}
